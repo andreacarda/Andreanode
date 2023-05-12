@@ -41,3 +41,16 @@ const carrello={
 }
 console.log(carrello.getTotale());
 
+function facciamoCose(input){
+    console.log("abbiamo fatto: "+ input)
+}
+
+function facciamoCoseDefault() {
+    facciamoCose("Default");
+}
+
+facciamoCose("qualsiasi stringa");
+setTimeout(facciamoCoseDefault, 1000);
+setTimeout(facciamoCose, 2000);
+setTimeout(()=> facciamoCose("quattro secondi"),4000) ; 
+
